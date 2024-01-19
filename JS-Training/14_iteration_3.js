@@ -29,12 +29,22 @@ for (const [key, value] of map) {
     // console.log(key, ':-', value);
 }
 
-const myObject = {
-    game1: 'NFS',
-    game2: 'Spiderman'
-}
+const user = {
 
-// for (const [key, value] of myObject) {
-//     console.log(key, ':-', value);
-    
-// }
+    name: 'John Doe',
+
+    email: 'john.doe@example.com',
+
+    age: 25,
+
+    dob: '08/02/1989',
+
+    active: true
+};
+
+// iterate over the user object
+
+for (const key in user) {
+
+    console.log(`${key}: ${user[key]}`);
+}
